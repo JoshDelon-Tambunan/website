@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-j"></i>
+                    <div class="logo-text">Josh Delon</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">My Skills</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container" id="home">
+                <div class="hero-pic">
+                    <img src="images/main_photho.jpg" alt="Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="input">a S1 student in Electrical Engineering</span></h5>
+                    <h1>Josh Delon</h1>
+                    <p></p>
+
+                    <div class="btn-group">
+                        <a href="Josh Delon-resume.pdf" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/josh-delon-55785727a" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/joshtbn_?igsh=MTkxa2dobGVlNDdvMw=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/JoshDelon-Tambunan" target="_blank">
+                                <i class="fa-brands fa-github"></i>                 
+                            </a>
+                            <a href="https://wa.me/+62082261022927" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i> 
+                            </a>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Skills</h2>
+        <p>During my studies, I focused on several areas including Internet of Things, Cloud Computing, Networking and Experienced in PCB design.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="hero-pic">
+            <img src="images/bro.jpg" alt="Profile Picture">
+        </div>        
+        <p>An Electrical Engineering student passionate about Electrical Systems, Computer Networks, Cloud Computing, and IoT. Experienced in PCB design, system integration, and FPGA implementation. Proactive, innovative, and skilled in problem-solving, with a commitment to continuous learning and professional growth.</p>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project">
+        <h2>Project</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Innovation of Electrical Energy Consumption Monitoring System</h3>
+                <p>
+                    Circuit Design: Connecting the SCT-013 current sensor and ZMPT101B voltage sensor to the ESP32 module for data collection.
+                    <span class="hidden-text" style="display: none;"> Application Development: Creating a user interface in the Blynk application to visually display energy consumption data. System Integration: Integrating all hardware and software components to function as a unified system.</span>
+                </p>
+                <button class="read-more" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+            <div class="project-card">
+                <h3>Data Management and Summation System</h3>
+                <p>
+                    Designing a stable input data management system using a debouncer module on FPGA.
+                    <span class="hidden-text" style="display: none;"> Integrating computer system architecture concepts with hardware components such as the 7-segment display. Implementing the entire system on the FPGA device to display the summation results on the 7-segment display.</span>
+                </p>
+                <button class="read-more" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+            <div class="project-card">
+                <h3>Business Franchise Development Project</h3>
+                <p>
+                    The goal of this project is to create a comprehensive guide for franchise management, covering legal, financial, operational, and marketing aspects.
+                    <span class="hidden-text" style="display: none;"> It aims to enhance profitability, efficiency, and brand consistency, providing clear reference material for café owners and franchisees to run their businesses professionally and systematically.</span>
+                </p>
+                <button class="read-more" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+        </div>
+        <div class="github-link">
+            <a href="https://github.com/JoshDelon-Tambunan" target="_blank">
+                <i class="fa-brands fa-github"></i> See on GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you have any inquiries, feel free to reach out. You can use the contact form below or reach me through my social media profiles.</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <h3>Alternatively, you can reach me through:</h3>
+        <ul>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+1234567890">+62 082261022927</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:joshdelon@email.com">joshdelon990@gmail.com</a></li>
+        </ul>
+        
+    </div>
+</section>
+
+
+    <!-- Typed.js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        // Toggle navbar
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        // Typed.js effect
+        var typed = new Typed(".input", {
+            strings: ["Frontend", "studying at IT Del", "Cloud Computing", "Computer Networks"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+
+        // Toggle Read More button
+        function toggleReadMore(button) {
+            var projectCard = button.parentElement;
+            var hiddenText = projectCard.querySelector(".hidden-text");
+
+            if (hiddenText.style.display === "none") {
+                hiddenText.style.display = "inline";
+                button.textContent = "Read Less";
+            } else {
+                hiddenText.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>
